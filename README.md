@@ -9,3 +9,5 @@ Roll20 Mythcraft Character Sheet
 5. The editor has four tabs: HTML Layout, CSS Styling, Translation, and Preview.
     You copy your HTML and CSS to their respective tabs, and if the sheet has translation files, you copy the content of the default translation file(usually English), or for the language you want.
 6. Then scroll down the page and press the Save Changes button.
+
+If you need more info go to https://wiki.roll20.net/Using_Custom_Character_Sheets
