@@ -238,6 +238,14 @@ input[name=attr_spelldescription] {
     height: 14px;
 }
 
+.charsheet .sheet-grid-attributes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+
+
 .charsheet .sheet-grid-general {
     display: grid;
     grid-template-columns: 270px 274px 274px;

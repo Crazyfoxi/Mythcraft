@@ -17,24 +17,42 @@
 	Other <input type="text" name="attr_char_otherfeatures"/>
 	<br />
 	<br />
-	<h3>Abilities</h3>
-	<button type="roll" value="Strength [[1d20+@{char_strength}]]" name="roll_strCheck">STR</button>
-	<input type="number" name="attr_char_strength"/>    
-	<button type="roll" value="Dexterity [[1d20+@{char_dexterity}]]" name="roll_dexCheck">DEX</button>
-	<input type="number" name="attr_char_dexterity"/>
-	<button type="roll" value="Endurance [[1d20+@{char_endurance}]]" name="roll_endCheck">END</button>
-	<input type="number" name="attr_char_endurance"/>
-	<button type="roll" value="Awareness [[1d20+@{char_awareness}]]" name="roll_awrCheck">AWR</button>
-	<input type="number" name="attr_char_awareness"/>
-	<button type="roll" value="Intellect [[1d20+@{char_intellect}]]" name="roll_intCheck">INT</button>
-	<input type="number" name="attr_char_intellect"/>
-	<button type="roll" value="Charisma [[1d20+@{char_charisma}]]" name="roll_chaCheck">CHA</button>
-	<input type="number" name="attr_char_charisma"/>
-	<button type="roll" value="Luck [[1d20+@{char_luck}]]" name="roll_luckCheck">LUCK</button>
-	<input type="number" name="attr_char_luck"/>
-	<button type="roll" value="Coordination [[1d20+@{char_coordination}]]" name="roll_corCheck">COR</button>
-	<input type="number" name="attr_char_coordination"/>
-	<br />
+	<h3>Attributes</h3>
+    <div class="sheet-grid-attributes">
+        <div class="sheet-str sheet-block"> 
+	        <button type="roll" value="Strength [[1d20+@{char_strength}]]" name="roll_strCheck">STR</button>
+	        <br><input type="number" name="attr_char_strength"/>
+        </div>    
+	    <div class="sheet-dex sheet-block">
+            <button type="roll" value="Dexterity [[1d20+@{char_dexterity}]]" name="roll_dexCheck">DEX</button>
+	        <br><input type="number" name="attr_char_dexterity"/>
+        </div>
+        <div class="sheet-end sheet-block">
+	        <button type="roll" value="Endurance [[1d20+@{char_endurance}]]" name="roll_endCheck">END</button>
+	        <br><input type="number" name="attr_char_endurance"/>
+        </div>
+        <div class="sheet-awr sheet-block">
+	        <button type="roll" value="Awareness [[1d20+@{char_awareness}]]" name="roll_awrCheck">AWR</button>
+	        <br><input type="number" name="attr_char_awareness"/>
+        </div>
+        <div class="sheet-int sheet-block">
+	        <button type="roll" value="Intellect [[1d20+@{char_intellect}]]" name="roll_intCheck">INT</button>
+	        <br><input type="number" name="attr_char_intellect"/>
+        </div>
+        <div class="sheet-cha sheet-block">
+	        <button type="roll" value="Charisma [[1d20+@{char_charisma}]]" name="roll_chaCheck">CHA</button>
+	        <br><input type="number" name="attr_char_charisma"/>
+        </div>
+        <div class="sheet-luck sheet-block">
+	        <button type="roll" value="Luck [[1d20+@{char_luck}]]" name="roll_luckCheck">LUCK</button>
+	        <br><input type="number" name="attr_char_luck"/>
+        </div>
+        <div class="sheet-cor sheet-block">
+	        <button type="roll" value="Coordination [[1d20+@{char_coordination}]]" name="roll_corCheck">COR</button>
+	        <br><input type="number" name="attr_char_coordination"/>
+        </div>
+	</div>
+    <br />
 	<br />
 	<div class="sheet-buttonbar">
         <div class="sheet-navbuttons">
