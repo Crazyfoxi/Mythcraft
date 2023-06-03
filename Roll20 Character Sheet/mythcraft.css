@@ -244,7 +244,17 @@ input[name=attr_spelldescription] {
     text-align: center;
 }
 
-
+.ui-dialog .charsheet input[name=attr_char_strength],
+.ui-dialog .charsheet input[name=attr_char_dexterity],
+.ui-dialog .charsheet input[name=attr_char_endurance],
+.ui-dialog .charsheet input[name=attr_char_awareness],
+.ui-dialog .charsheet input[name=attr_char_intellect],
+.ui-dialog .charsheet input[name=attr_char_charisma],
+.ui-dialog .charsheet input[name=attr_char_luck],
+.ui-dialog .charsheet input[name=attr_char_coordination] {
+    text-align: right;
+    width: 46px;
+}
 
 .charsheet .sheet-grid-general {
     display: grid;
