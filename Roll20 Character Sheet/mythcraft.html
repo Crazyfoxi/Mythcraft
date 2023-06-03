@@ -284,23 +284,6 @@
 			Duration <input type="text" name="attr_cantripduration">
 			<textarea name="attr_cantripdescription"></textarea>
 		</fieldset>
-		<br><h3>Rituals & Invocations</h3>
-		<fieldset name="attr_ritual-list" class="repeating_rituals">
-			<button type="roll" name="roll_ritual" value="@{ritualname} | Source: @{ritualsource} | Casting Time: @{ritualcastingtime} | Materials: @{ritualmaterials} | Duration: @{ritualduration} | Description: @{ritualdescription}">w</button>
-			<input type="text" name="attr_ritualname">
-			Source <select name="attr_ritualsource" class="ritualsource">
-				<option value="Arcane">Arcane</option>
-				<option value="Divine">Divine</option>
-				<option value="Occult">Occult</option>
-				<option value="Primal">Primal</option>
-				<option value="Psionic">Psionic</option>
-			</select>
-			Cast Time <input type="text" name="attr_ritualcastingtime">
-			Mats. <input type="text" name="attr_ritualmaterials">
-			Recharge <input type="text" name="attr_ritualrecharge">
-			Dur. <input type="text" name="attr_ritualduration">
-			<textarea name="attr_ritualdescription"></textarea>
-		</fieldset>
 		<br><h3>Spells</h3>
 		<fieldset name="attr_spell-list" class="repeating_spell">
 			<button type="roll" name="roll_spell" value="@{spellname} | APC: @{spellapc} | SPC: @{spellspc} | Source: @{spellsource} | Range: @{spellrange} | Requires: @{spellrequires} | Duration: @{spellduration} | Description: @{spelldescription}">w</button>
@@ -318,6 +301,23 @@
 			Requires <input type="text" name="attr_spellrequires">
 			Duration <input type="text" name="attr_spellduration">
 			<textarea name="attr_spelldescription"></textarea>
+		</fieldset>		
+        <br><h3>Rituals & Invocations</h3>
+		<fieldset name="attr_ritual-list" class="repeating_rituals">
+			<button type="roll" name="roll_ritual" value="@{ritualname} | Source: @{ritualsource} | Casting Time: @{ritualcastingtime} | Materials: @{ritualmaterials} | Duration: @{ritualduration} | Description: @{ritualdescription}">w</button>
+			<input type="text" name="attr_ritualname">
+			Source <select name="attr_ritualsource" class="ritualsource">
+				<option value="Arcane">Arcane</option>
+				<option value="Divine">Divine</option>
+				<option value="Occult">Occult</option>
+				<option value="Primal">Primal</option>
+				<option value="Psionic">Psionic</option>
+			</select>
+			Cast Time <input type="text" name="attr_ritualcastingtime">
+			Mats. <input type="text" name="attr_ritualmaterials">
+			Recharge <input type="text" name="attr_ritualrecharge">
+			Dur. <input type="text" name="attr_ritualduration">
+			<textarea name="attr_ritualdescription"></textarea>
 		</fieldset>
     </div>
     <div class='sheet-inventory'>
