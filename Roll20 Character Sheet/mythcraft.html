@@ -113,15 +113,16 @@
         <h2>Combat Information &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <button type="roll" name="roll_initiative" value="Initiative [[1d20+@{char_awareness} &{tracker}]]">Roll for Initiative!!!</button></h2>
 		<br> Current HP <input type="number" name="attr_char_currenthp"/> 
 		/ <input type="number" name="attr_char_maxhp"/> HP Max
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Current AP <input type="number" name="attr_char_currentap"/>
-		/ <input type="number" name="attr_char_maxap"/> Max AP
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Death Points <input type="number" name="attr_char_deathpoints"/>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Shield HP <input type="text" name="attr_char_shield">
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Death Points <input type="number" name="attr_char_deathpoints"/>
 		/ <input type="number" name="attr_char_maxdp" value="8"/> Max Death Points
-		<br /> Special AP <input type="number" name="attr_char_specialap"/>
+		<br />Current AP <input type="number" name="attr_char_currentap"/>
+		/ <input type="number" name="attr_char_maxap"/> Max AP 
+		&nbsp &nbsp &nbsp Special AP <input type="number" name="attr_char_specialap"/>
 		<input type="text" name="attr_char_specialaptype"/>
-		&nbsp &nbsp &nbsp Speed <input type="text" name="attr_char_speed"/>
-		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Current SP <input type="number" name="attr_char_currentsp"/>
+		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Current SP <input type="number" name="attr_char_currentsp"/>
 		/ <input type="number" name="attr_char_maxsp"/> Max SP
+		Speed <input type="text" name="attr_char_speed"/>
 		<br><br><h3>Defenses</h3>
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp AR <input type="number" name="attr_char_armorrating"/>
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp REF <input type="number" name="attr_char_reflexes"/>

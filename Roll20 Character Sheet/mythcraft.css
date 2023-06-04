@@ -204,6 +204,10 @@ input[name=attr_spellrequires] {
     width: 115px;
 }
 
+input[name=attr_char_shield] {
+    width: 100px;
+}
+
 input[name=attr_spellduration] {
     width: 92px;
 }
