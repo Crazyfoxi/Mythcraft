@@ -20,35 +20,35 @@
 	<h3>Attributes</h3>
     <div class="sheet-grid-attributes">
         <div class="sheet-str sheet-block"> 
-	        <button type="roll" value="Strength [[1d20+@{char_strength}]]" name="roll_strCheck">STR</button>
+	        <button type="roll" value="&{template:default} {{name=Strength}} {{[[1d20+@{char_strength}]]}}" name="roll_strCheck">STR</button>
 	        <br><input type="number" name="attr_char_strength"/>
         </div>    
 	    <div class="sheet-dex sheet-block">
-            <button type="roll" value="Dexterity [[1d20+@{char_dexterity}]]" name="roll_dexCheck">DEX</button>
+            <button type="roll" value="&{template:default} {{name=Dexterity}} {{[[1d20+@{char_dexterity}]]}}" name="roll_dexCheck">DEX</button>
 	        <br><input type="number" name="attr_char_dexterity"/>
         </div>
         <div class="sheet-end sheet-block">
-	        <button type="roll" value="Endurance [[1d20+@{char_endurance}]]" name="roll_endCheck">END</button>
+	        <button type="roll" value="&{template:default} {{name=Endurance}} {{[[1d20+@{char_endurance}]]}}" name="roll_endCheck">END</button>
 	        <br><input type="number" name="attr_char_endurance"/>
         </div>
         <div class="sheet-awr sheet-block">
-	        <button type="roll" value="Awareness [[1d20+@{char_awareness}]]" name="roll_awrCheck">AWR</button>
+	        <button type="roll" value="&{template:default} {{name=Awareness}} {{[[1d20+@{char_awareness}]]}}" name="roll_awrCheck">AWR</button>
 	        <br><input type="number" name="attr_char_awareness"/>
         </div>
         <div class="sheet-int sheet-block">
-	        <button type="roll" value="Intellect [[1d20+@{char_intellect}]]" name="roll_intCheck">INT</button>
+	        <button type="roll" value="&{template:default} {{name=Intellect}} {{[[1d20+@{char_intellect}]]}}" name="roll_intCheck">INT</button>
 	        <br><input type="number" name="attr_char_intellect"/>
         </div>
         <div class="sheet-cha sheet-block">
-	        <button type="roll" value="Charisma [[1d20+@{char_charisma}]]" name="roll_chaCheck">CHA</button>
+	        <button type="roll" value="&{template:default} {{name=Charisma}} {{[[1d20+@{char_charisma}]]}}" name="roll_chaCheck">CHA</button>
 	        <br><input type="number" name="attr_char_charisma"/>
         </div>
         <div class="sheet-luck sheet-block">
-	        <button type="roll" value="Luck [[1d20+@{char_luck}]]" name="roll_luckCheck">LUCK</button>
+	        <button type="roll" value="&{template:default} {{name=Luck}} {{[[1d20+@{char_luck}]]}}" name="roll_luckCheck">LUCK</button>
 	        <br><input type="number" name="attr_char_luck"/>
         </div>
         <div class="sheet-cor sheet-block">
-	        <button type="roll" value="Coordination [[1d20+@{char_coordination}]]" name="roll_corCheck">COR</button>
+	        <button type="roll" value="&{template:default} {{name=Coordination}} {{[[1d20+@{char_coordination}]]}}" name="roll_corCheck">COR</button>
 	        <br><input type="number" name="attr_char_coordination"/>
         </div>
 	</div>
@@ -75,7 +75,7 @@
 			<div class="sheet-skills sheet-block">
 				<h4>Skills</h4>
 				<fieldset name=attr_skill-list class="repeating_skills">
-					<button type="roll" name="roll_skill" value="@{skillname} [[1d20+@{skillvalue}+@{mod}]]"></button>
+					<button type="roll" name="roll_skill" value="&{template:default} {{name=@{skillname}}} {{[[1d20+@{skillvalue}+@{mod}]]}}"></button>
 					<input type="text" name="attr_skillname">
 					<input type="number" name="attr_skillvalue">
 					<select name="attr_mod" class="mod">
@@ -93,7 +93,7 @@
 			<div class="sheet-talents sheet-block">
 				<h4>Talents</h4>
 				<fieldset name="attr_talent-list" class="repeating_talents">
-					<button type="roll" name="roll_talent" value="@{talentname}: @{talentdescription}">w</button>
+					<button type="roll" name="roll_talent" value="&{template:default} {{name=@{talentname}}} {{talent=@{talentdescription}}}">w</button>
 					<input type="number" name="attr_talentlevel">
 					<input type="text" name="attr_talentname">
 					<textarea name="attr_talentdescription"></textarea>
@@ -102,7 +102,7 @@
 			<div class="sheet-abilities sheet-block">
 				<h4>BOP & Lineage Abilities</h4>
 				<fieldset name="attr_ability-list" class="repeating_abilities">
-					<button type="roll" name="roll_ability" value="@{abilityname}: @{abilitydescription}">w</button>
+					<button type="roll" name="roll_ability" value="&{template:default} {{name=@{abilityname}}} {{Lineage %NEWLINE% or BOP=@{abilitydescription}}}">w</button>
 					<input type="text" name="attr_abilityname">
 					<textarea name="attr_abilitydescription"></textarea>
 				</fieldset>
@@ -110,7 +110,7 @@
 		</div>
     </div>
     <div class='sheet-combat'>
-        <h2>Combat Information &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <button type="roll" name="roll_initiative" value="Initiative [[1d20+@{char_awareness} &{tracker}]]">Roll for Initiative!!!</button></h2>
+        <h2>Combat Information &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <button type="roll" name="roll_initiative" value="&{template:default} {{name=Initiative}} {{[[1d20+@{char_awareness} &{tracker}]]}}">Roll for Initiative!!!</button></h2>
 		<br> Current HP <input type="number" name="attr_char_currenthp"/> 
 		/ <input type="number" name="attr_char_maxhp"/> HP Max
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Shield HP <input type="text" name="attr_char_shield">
@@ -123,7 +123,7 @@
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Current SP <input type="number" name="attr_char_currentsp"/>
 		/ <input type="number" name="attr_char_maxsp"/> Max SP
 		Speed <input type="text" name="attr_char_speed"/>
-		<br><br><h3>Defenses</h3>
+		<br><br><h3>Defenses <button type="roll" name="roll_defenses" value="&{template:default} {{name=Defenses}} {{AR=@{char_armorrating}}} {{REF=@{char_reflexes}}} {{FORT=@{char_fortitude}}} {{ANT=@{char_anticipation}}} {{LOG=@{char_logic}}} {{WILL=@{char_willpower}}}">w</button></h3>
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp AR <input type="number" name="attr_char_armorrating"/>
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp REF <input type="number" name="attr_char_reflexes"/>
 		&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp FORT <input type="number" name="attr_char_fortitude"/>
@@ -136,7 +136,7 @@
 			<input type="text" name="attr_attackname">
 			&nbsp APC <input type="number" name="attr_attackapc">
 			&nbsp Range <input type="text" name="attr_attackrange">
-			&nbsp <button type="roll" name="roll_toattack" value="@{attackname} [[1d20+@{toattack}+@{attackmod}]] @{attackrange}">Attack</button>
+			&nbsp <button type="roll" name="roll_toattack" value="&{template:default} {{name=@{attackname}}} {{Range=@{attackrange}}} {{Attack=[[1d20+@{toattack}+@{attackmod}]] }}">Attack</button>
 			<input type="number" name="attr_toattack" value="0">
 			<select name="attr_attackmod" class="attackmod">
 				<option value="@{char_strength}">STR</option>
@@ -149,7 +149,7 @@
 				<option value="@{char_coordination}">COR</option>
 				<option value="0">NONE</option>
 			</select>
-			<button type="roll" name="roll_attackdamage" value="@{attackname} Damage [[@{attackdamage}+@{attackdamagemod}]]">Damage</button>
+			<button type="roll" name="roll_attackdamage" value="&{template:default} {{name=@{attackname}}} {{Damage=[[@{attackdamage}+@{attackdamagemod}]]}}">Damage</button>
 			<input type="text" name="attr_attackdamage">
 			<select name="attr_attackdamagemod" class="attr_attackdamagemod">
 				<option value="@{char_strength}">STR</option>
@@ -162,7 +162,7 @@
 				<option value="@{char_coordination}">COR</option>
 				<option value="0">NONE</option>
 			</select>
-			<button type="roll" name="roll_attackdesc-chat" value="@{attackname}: @{attackdescription}">w</button>
+			<button type="roll" name="roll_attackdesc-chat" value="&{template:default} {{name=@{attackname}}} {{Range=@{attackrange}}} {{Desc.=@{attackdescription}}}">w</button>
 			<textarea name="attr_attackdescription"></textarea>
 		</fieldset>
 		<br />
@@ -170,7 +170,7 @@
 			<div class="sheet-reactions sheet-block">
 				<h4>Reactive Actions</h4>
 				<fieldset name="attr_reaction-list" class="repeating_reactions">
-					<button type="roll" name="roll_reaction" value="@{reactionname}: @{reactiondescription}">w</button>
+					<button type="roll" name="roll_reaction" value="&{template:default} {{name=@{reactionname}}} {{APC=@{reactionapc}}} {{Reaction=@{reactiondescription}}}">w</button>
 					<input type="text" name="attr_reactionname">
 					&nbsp &nbsp APC <input type="number" name="attr_reactionapc">
 					<textarea type="text" name="attr_reactiondescription"></textarea>
@@ -179,7 +179,7 @@
 			<div class="sheet-combatabilities">
 				<h4>Abilities</h4>
 				<fieldset name="attr_combatability-list" class="repeating_combatabilities">
-					<button type="roll" name="roll_combatability" value="@{combatabilityname}: @{combatabilitydescription}">w</button>
+					<button type="roll" name="roll_combatability" value="&{template:default} {{name=@{combatabilityname}}} {{APC=@{combatabilityapc}}} {{Ability=@{combatabilitydescription}}}">w</button>
 					<input type="text" name="attr_combatabilityname">
 					&nbsp &nbsp APC <input type="number" name="attr_combatabilityapc">
 					<textarea name="attr_combatabilitydescription"></textarea>
@@ -188,13 +188,13 @@
 			<div class="sheet-resists">
 				<h4>Resistances</h4>
 				<fieldset name="attr_resist-list" class="repeating_resists">
-					<button type="roll" name="roll_resist" value="@{resistname}: @{resistdescription}">w</button>
+					<button type="roll" name="roll_resist" value="&{template:default} {{name=@{resistname}}} {{Resist=@{resistdescription}}}">w</button>
 					<input type="text" name="attr_resistname">
 					<textarea name="attr_resistdescription"></textarea>
 				</fieldset>
 				<h4>Vulnerabilities</h4>
 				<fieldset name="attr_vuln-list" class="repeating_vulns">
-					<button type="roll" name="roll_vuln" value="@{vulnname}: @{vulndescription}">w</button>
+					<button type="roll" name="roll_vuln" value="&{template:default} {{name=@{vulnname}}} {{Vuln.=@{vulndescription}}}">w</button>
 					<input type="text" name="attr_vulnname">
 					<textarea name="attr_vulndescription"></textarea>
 				</fieldset>
@@ -270,7 +270,7 @@
 		<br />
 		<h3>Cantrips, Prayers, & Chants</h3>
 		<fieldset name="attr_cantrip-list" class="repeating_cantrips">
-			<button type="roll" name="roll_cantrip" value="@{cantripname} | APC: @{cantripapc} | Source: @{cantripsource} | Range: @{cantriprange} | Requires: @{cantriprequires} | Duration: @{cantripduration} | Description: @{cantripdescription}">w</button>
+			<button type="roll" name="roll_cantrip" value="&{template:default} {{name=@{cantripname}}} {{APC=@{cantripapc}}} {{Source=@{cantripsource}}} {{Range=@{cantriprange}}} {{Requires=@{cantriprequires}}} {{Duration=@{cantripduration}}} {{Desc.=@{cantripdescription}}}">w</button>
 			<input type="text" name="attr_cantripname">
 			APC <input type="number" name="attr_cantripapc">
 			Source <select name="attr_cantripsource" class="cantripsource">
@@ -287,7 +287,7 @@
 		</fieldset>
 		<br><h3>Spells</h3>
 		<fieldset name="attr_spell-list" class="repeating_spell">
-			<button type="roll" name="roll_spell" value="@{spellname} | APC: @{spellapc} | SPC: @{spellspc} | Source: @{spellsource} | Range: @{spellrange} | Requires: @{spellrequires} | Duration: @{spellduration} | Description: @{spelldescription}">w</button>
+			<button type="roll" name="roll_spell" value="&{template:default} {{name=@{spellname}}} {{APC=@{spellapc}}} {{SPC=@{spellspc}}} {{Source=@{spellsource}}} {{Range=@{spellrange}}} {{Requires=@{spellrequires}}} {{Duration=@{spellduration}}} {{Desc.=@{spelldescription}}}">w</button>
 			<input type="text" name="attr_spellname">
 			APC <input type="number" name="attr_spellapc">
 			SPC <input type="number" name="attr_spellspc">
@@ -305,7 +305,7 @@
 		</fieldset>		
         <br><h3>Rituals & Invocations</h3>
 		<fieldset name="attr_ritual-list" class="repeating_rituals">
-			<button type="roll" name="roll_ritual" value="@{ritualname} | Source: @{ritualsource} | Casting Time: @{ritualcastingtime} | Materials: @{ritualmaterials} | Duration: @{ritualduration} | Description: @{ritualdescription}">w</button>
+			<button type="roll" name="roll_ritual" value="&{template:default} {{name=@{ritualname}}} {{Source=@{ritualsource}}} {{Cast Time=@{ritualcastingtime}}} {{Materials=@{ritualmaterials}}} {{Duration=@{ritualduration}}} {{Desc.=@{ritualdescription}}}">w</button>
 			<input type="text" name="attr_ritualname">
 			Source <select name="attr_ritualsource" class="ritualsource">
 				<option value="Arcane">Arcane</option>

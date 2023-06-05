@@ -19,6 +19,20 @@ input, textarea, select, .uneditable-input {
     border-radius: 3px;
 }
 
+.sheet-rolltemplate-default td:first-child {
+    text-align: left;
+    min-width: 0px;
+    max-width: 100px;
+    padding-right: 5px;
+  }
+
+.sheet-rolltemplate-default td {
+    padding: 1px;
+    line-height: 1.4em;
+    vertical-align: top;
+    min-width: 160px;
+}
+
 input[name=attr_char_height], input[name=attr_char_weight], input[name=attr_attackdamage] {
     width: 70px
 }
@@ -95,7 +109,8 @@ button[name=roll_cantrip],
 button[name=roll_ritual],
 button[name=roll_spell], 
 button[name=roll_resist], 
-button[name=roll_vuln] {
+button[name=roll_vuln],
+button[name=roll_defenses] {
     font-family: 'pictos';
     font-size: 16px;
 }
@@ -111,7 +126,8 @@ button[name=roll_vuln] {
 .ui-dialog .charsheet button[name=roll_ritual]:before, 
 .ui-dialog .charsheet button[name=roll_spell]:before, 
 .ui-dialog .charsheet button[name=roll_resist]:before, 
-.ui-dialog .charsheet button[name=roll_vuln]:before {
+.ui-dialog .charsheet button[name=roll_vuln]:before,
+.ui-dialog .charsheet button[name=roll_defenses]:before {
     font-family: "dicefontd20";
     content: "";
 }
