@@ -19,6 +19,18 @@ input, textarea, select, .uneditable-input {
     border-radius: 3px;
 }
 
+
+
+.charsheet .sheet-character,
+.charsheet .sheet-block-switch:checked ~ .sheet-npc {
+  display: block;
+}
+
+.charsheet .sheet-npc,
+.charsheet .sheet-block-switch:checked ~ .sheet-character {
+  display: none;
+}
+
 .sheet-rolltemplate-default td:first-child {
     text-align: left;
     min-width: 0px;
@@ -264,6 +276,12 @@ input[name=attr_spelldescription] {
     text-align: center;
 }
 
+.charsheet .sheet-grid-npcattributes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
 .ui-dialog .charsheet input[name=attr_char_strength],
 .ui-dialog .charsheet input[name=attr_char_dexterity],
 .ui-dialog .charsheet input[name=attr_char_endurance],
@@ -322,13 +340,14 @@ input[name=attr_spelldescription] {
 .sheet-backstory {
 	display: none;
 }
+
 .sheet-journal,
 .sheet-backstory {
     background: rgba(255,255,255,0.75);
 }
 
 .sheet-tabstoggle[value="general"] ~ div.sheet-general,
-.sheet-tabstoggle[value="combat"] ~ .sheet-combat,
+.sheet-tabstoggle[value="combat"] ~ div.sheet-combat,
 .sheet-tabstoggle[value="magic"] ~ div.sheet-magic,
 .sheet-tabstoggle[value="inventory"] ~ div.sheet-inventory,
 .sheet-tabstoggle[value="journal"] ~ div.sheet-journal,
@@ -338,6 +357,7 @@ input[name=attr_spelldescription] {
 	margin: 0px;
 	padding: 0px;
 }
+
 .sheet-topbuttons {
     background-color: #dbd6d6b7;
     font-family: inherit;
