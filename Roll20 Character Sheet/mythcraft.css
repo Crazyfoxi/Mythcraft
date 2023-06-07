@@ -55,6 +55,10 @@ input[name=attr_char_eyecolor], input[name=attr_char_haircolor] {
     width: 100px
 }
 
+input[name=attr_char_level] {
+    width: 41px;
+}
+
 input[name=attr_char_otherfeatures] {
     width: 227px
 }
@@ -149,7 +153,7 @@ input[name=attr_talentname] {
 }
 
 input[name=attr_abilityname] {
-    width: 243px;
+    width: 235px;
 }
 
 .ui-dialog .charsheet input[name=attr_char_currencyamber], 
@@ -169,7 +173,7 @@ input[name=attr_attackname] {
 }
 
 input[name=attr_attackrange] {
-    width: 100px;
+    width: 80px;
 }
 
 input[name=attr_reactionname] {
@@ -282,6 +286,12 @@ input[name=attr_spelldescription] {
     text-align: center;
 }
 
+.charsheet .sheet-grid-npc {
+    display: grid;
+    grid-template-columns: 265px 270px 270px;
+    grid-gap: 15px;
+}
+
 .ui-dialog .charsheet input[name=attr_char_strength],
 .ui-dialog .charsheet input[name=attr_char_dexterity],
 .ui-dialog .charsheet input[name=attr_char_endurance],
@@ -290,7 +300,7 @@ input[name=attr_spelldescription] {
 .ui-dialog .charsheet input[name=attr_char_charisma],
 .ui-dialog .charsheet input[name=attr_char_luck],
 .ui-dialog .charsheet input[name=attr_char_coordination] {
-    text-align: right;
+    text-align: center;
     width: 46px;
 }
 
