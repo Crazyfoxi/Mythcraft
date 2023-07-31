@@ -125,7 +125,7 @@
 			<input type="text" name="attr_char_specialaptype"/>
 			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  Current SP <input type="number" name="attr_char_currentsp"/>
 			/ <input type="number" name="attr_char_maxsp"/> Max SP
-			Speed <input type="text" name="attr_char_speed"/>
+			<br>Speed <input type="text" name="attr_char_speed"/>
 			<br><br><h3>Defenses <button type="roll" name="roll_defenses" value="&{template:default} {{name=Defenses}} {{AR=@{char_armorrating}}} {{REF=@{char_reflexes}}} {{FORT=@{char_fortitude}}} {{ANT=@{char_anticipation}}} {{LOG=@{char_logic}}} {{WILL=@{char_willpower}}}">w</button></h3>
 			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp AR <input type="number" name="attr_char_armorrating"/>
 			&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp REF <input type="number" name="attr_char_reflexes"/>
@@ -210,6 +210,14 @@
 			/ <input type="number" name="attr_char_maxsp"/> Max SP
 			<br /><br>
 			<h3>Magic Levels</h3>
+			Primary Source <select name="attr_primarysource" class="primarysource">
+				<option value="Arcane">Arcane</option>
+				<option value="Divine">Divine</option>
+				<option value="Occult">Occult</option>
+				<option value="Primal">Primal</option>
+				<option value="Psionic">Psionic</option>
+			</select>
+			<br>
 			Arcane <input type="number" name="attr_char_arcanelevel">
 			<select name="attr_arcanemod" class="arcanemod">
 				<option value="0">--</option>

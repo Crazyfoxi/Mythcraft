@@ -92,6 +92,8 @@ select[name=attr_attackdamagemod] {
     width: 70px;
 }
 
+
+
 select[name=attr_arcanemod],
 select[name=attr_divinemod],
 select[name=attr_occultmod],
@@ -103,7 +105,8 @@ select[name=attr_psionicmod] {
 
 select[name=attr_cantripsource], 
 select[name=attr_ritualsource], 
-select[name=attr_spellsource] {
+select[name=attr_spellsource],
+select[name=attr_primarysource] {
     height: 26px;
     width: 72px;
 }
@@ -164,7 +167,9 @@ input[name=attr_abilityname] {
 }
 
 .ui-dialog .charsheet input[name=attr_char_currenthp], 
-.ui-dialog .charsheet input[name=attr_char_maxhp] {
+.ui-dialog .charsheet input[name=attr_char_maxhp], 
+.ui-dialog .charsheet input[name=attr_char_currentsp], 
+.ui-dialog .charsheet input[name=attr_char_maxsp]{
     width: 50px;
 }
 
